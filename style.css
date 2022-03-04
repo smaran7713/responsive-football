@@ -4,6 +4,7 @@
 /* common style */
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100%;
     margin: 0;
 }
 /* top site */
@@ -31,9 +32,12 @@ body{
     color: #FFFFFF;
     padding: 10px 24px 10px 24px;
 }
-
+.anchor-btn:hover{
+    color: #2d25a0;
+}
 
 /* all player */
+
 .all-player{
     margin-top: 70px;
 }
@@ -70,7 +74,9 @@ footer img{
 @media only screen and (max-width:688px) {
         .top-site{
             flex-direction: column;
-            width: 80%;
+             width: 100%;
+             align-items: center;
+             justify-content: center;
     }
     .players{
         grid-template-columns: repeat(1, 1fr);
@@ -79,14 +85,11 @@ footer img{
 }
 /* tablet device */
 @media only screen and (min-width:688px) and (max-width:992px) {
-    .top-site{
-        background-color: #E02C6D;
+        .top-site{
         flex-direction: column;
-        width: 100%;
-}
+    }
     .players{
         grid-template-columns: repeat(1, 1fr);
-        color: lightcoral;
         margin-top:150px;
-}
+    }
 }
